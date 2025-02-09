@@ -1,0 +1,97 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    char operation;
+    double num1, num2;
+
+    cout << "Simple Menu-Based Calculator\n";
+    cout << "----------------------------\n";
+    cout << "Enter two numbers: ";
+    cin >> num1 >> num2;
+
+    cout << "Choose an operation:\n";
+    cout << "1. Addition (+)\n";
+    cout << "2. Subtraction (-)\n";
+    cout << "3. Multiplication (*)\n";
+    cout << "4. Division (/)\n";
+    cout << "Enter the operation number: ";
+    cin >> operation;
+
+    switch (operation) {
+        case '1':
+            cout << "Result: " << num1 + num2 << endl;
+            break;
+        case '2':
+            cout << "Result: " << num1 - num2 << endl;
+            break;
+        case '3':
+            cout << "Result: " << num1 * num2 << endl;
+            break;
+        case '4':
+            if (num2 != 0) {
+                cout << "Result: " << num1 / num2 << endl;
+            } else {
+                cout << "Error: Cannot divide by zero.\n";
+            }
+            break;
+        default:
+            cout << "Invalid operation. Please select a valid operation.\n";
+    }
+
+    return 0;
+}
+
+
+In this program:
+- The user is prompted to enter two numbers.
+- A menu of operations is displayed, and the user selects an operation by entering the corresponding number.
+- A switch-case statement is used to perform the selected operation on the entered numbers and display the result.
+
+You can compile and run this C++ program to create a simple menu-based calculator that allows users to select mathematical operations to perform on two numbers. Feel free to modify and expand this program to include more operations or functionalities based on your requirements.Sure! Below is an example of a simple menu-based calculator implemented in C++ using a switch-case statement. This program presents the user with a menu of mathematical operations (addition, subtraction, multiplication, and division) and allows them to select an operation to perform.
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    char operation;
+    double num1, num2;
+
+    cout << "Simple Menu-Based Calculator\n";
+    cout << "----------------------------\n";
+    cout << "Enter two numbers: ";
+    cin >> num1 >> num2;
+
+    cout << "Choose an operation:\n";
+    cout << "1. Addition (+)\n";
+    cout << "2. Subtraction (-)\n";
+    cout << "3. Multiplication (*)\n";
+    cout << "4. Division (/)\n";
+    cout << "Enter the operation number: ";
+    cin >> operation;
+
+    switch (operation) {
+        case '1':
+            cout << "Result: " << num1 + num2 << endl;
+            break;
+        case '2':
+            cout << "Result: " << num1 - num2 << endl;
+            break;
+        case '3':
+            cout << "Result: " << num1 * num2 << endl;
+            break;
+        case '4':
+            if (num2 != 0) {
+                cout << "Result: " << num1 / num2 << endl;
+            } else {
+                cout << "Error: Cannot divide by zero.\n";
+            }
+            break;
+        default:
+            cout << "Invalid operation. Please select a valid operation.\n";
+    }
+
+    return 0;
+}
